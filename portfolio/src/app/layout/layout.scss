@@ -1,0 +1,35 @@
+.responsive-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 95vw;
+}
+ 
+/* Teléfonos pequeños */
+@media (min-width: 600px) {
+  .responsive-container {
+    max-width: 90vw;
+  }
+}
+ 
+/* Tablets en vertical */
+@media (min-width: 960px) {
+  .responsive-container {
+    max-width: 70vw;
+  }
+}
+ 
+/* Tablets en horizontal o pantallas medianas */
+@media (min-width: 1280px) {
+  .responsive-container {
+    max-width: 70vw;
+  }
+}
+ 
+/* Pantallas grandes */
+@media (min-width: 1600px) {
+  .responsive-container {
+    max-width: 70vw;
+  }
+}

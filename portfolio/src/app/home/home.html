@@ -1,0 +1,76 @@
+
+<div class="contenidoHome">
+
+    <!--Seccion izquierda con foto, datos de contacto y datos adicionales-->
+    <section class="sectionIzq">
+
+        <div class="divFotoTitulo">
+            <div class="divFoto">
+                <img [src]="rutaFoto" alt="Foto Perfil" class="foto" />
+            </div>
+
+            <div class="divTitulo">
+                <span class="textoTituloHome">INGENIERO INFORMÁTICO</span>
+            </div>
+        </div>
+        
+        <div class="divDatosContacto">
+            <span class="spanLogos">
+                <div class="divLogos"><img [src]="rutaLogoUbicacion" alt="Logo Ubicacion" class="logos" /></div> 
+                Las Palmas de Gran Canaria, España
+            </span>
+            <span class="spacer"></span>
+            <span class="spanLogos">
+                <div class="divLogos"><img [src]="rutaLogoTelefono" alt="Logo Telefono" class="logos" /></div> 
+                <a class="enlacesDatosContacto" href="tel:+34628661068">628 66 10 68</a>
+            </span>
+            <span class="spacer"></span>
+            <span class="spanLogos">
+                <div class="divLogos"><img [src]="rutaLogoEmail" alt="Logo Email" class="logos" /></div>
+                <a class="enlacesDatosContacto" href="mailto:javiersrzsrz@gmail.com">javiersrzsrz@gmail.com</a>
+            </span>
+            <span class="spacer"></span>
+            <span class="spanLogos">
+                <div class="divLogos"><img [src]="rutaLogoGitHub" alt="Logo GitHub" class="logos" /></div> 
+                <a class="enlacesDatosContacto" href="https://github.com/JavierSuarezSuarez" target="_blank">https://github.com/JavierSuarezSuarez</a>
+            </span>
+        </div>
+
+        <div class="divExpansionPanelsIzq">
+            <mat-accordion multi class="expansionPanelAccordion">
+                <!--Expansion Panel de Aptitudes-->
+                <app-expansionpanel [idSeccion]="SeccionesCV.Aptitudes"></app-expansionpanel>
+                <span class="spacer"></span>
+                <!--Expansion Panel de Idiomas-->
+                <app-expansionpanel [idSeccion]="SeccionesCV.Idiomas"></app-expansionpanel>
+                <span class="spacer"></span>
+                <!--Expansion Panel de Datos de Interes-->
+                <app-expansionpanel [idSeccion]="SeccionesCV.DatosInteres"></app-expansionpanel>
+                <span class="spacer"></span>
+            </mat-accordion>
+        </div>
+    </section>
+
+    <!--Seccion derecha con el nombre y apartados en Expansion Panels-->
+    <section class="sectionDer">
+        <div class="divNombre">
+            <span class="textoNombre">Javier Suárez Suárez</span>
+        </div>
+        <div class="divExpansionPanelsDer">
+            <mat-accordion multi class="expansionPanelAccordion">
+                <!--Expansion Panel de Perfil Profesional-->
+                <app-expansionpanel [idSeccion]="SeccionesCV.PerfilProfesional"></app-expansionpanel>
+                <span class="spacer"></span>
+                <!--Expansion Panel de Formacion-->
+                <app-expansionpanel [idSeccion]="SeccionesCV.Formacion"></app-expansionpanel>
+                <span class="spacer"></span>
+                <!--Expansion Panel de Experiencia Laboral-->
+                <app-expansionpanel [idSeccion]="SeccionesCV.Experiencia"></app-expansionpanel>
+                <span class="spacer"></span>
+                <!--Expansion Panel de Tecnologias y conocimientos -->
+                <app-expansionpanel [idSeccion]="SeccionesCV.TecnologiasConocimientos"></app-expansionpanel>
+                <span class="spacer"></span>
+            </mat-accordion>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,44 @@
+[
+    {
+    "idSeccion": 0,
+    "tituloSeccion": "Perfil Profesional",
+    "textoSeccion": "Ingeniero Informático por la ULPGC, con Máster en Ciberseguridad por la UNED, interesado en aquellas ramas de la informática relacionadas con el desarrollo de software, la ciberseguridad y la administración de sistemas."
+    },
+
+    {
+    "idSeccion": 1,
+    "tituloSeccion": "Formación",
+    "textoSeccion": "-Máster en Ciberseguridad (UNED) 2023-2024.\n\n-Grado en Ingeniería Informática (ULPGC) 2018-2022."
+    },
+
+    {
+    "idSeccion": 2,
+    "tituloSeccion": "Experiencia Laboral",
+    "textoSeccion": "Técnicas Competitivas  (nov. 2022 – actualidad)\n\nHe estado trabajando como desarrollador en varios proyectos relacionados con el ámbito de la sanidad, en los que he adquirido conocimientos en tecnologías como .NET, Angular, C# o Visual Basic. Entre las tareas realizadas, se encuentran:\n\n-Desarrollo de nuevos módulos para aplicaciones web y de escritorio, así como de APIs REST y de servicios SOAP con stack .NET 8 / .NET Framework 4, Angular, Oracle (Base de Datos) y Docker.\n\n-Realización de despliegues en IIS y resolución de incidencias.\n\nCyberdata Security Consultora (sept. 2021 – ene. 2022)\n\nRealicé mis prácticas externas, donde adquirí conocimientos en herramientas de Kali Linux, así como la forma de realizar auditorías y análisis OSINT."
+    },
+
+    {
+    "idSeccion": 3,
+    "tituloSeccion": "Tecnologías y conocimientos",
+    "textoSeccion": "-Lenguajes: C#, C, Visual Basic, Python, Kotlin y Java.\n\n-Entorno web: HTML, CSS, JavaScript, TypeScript, PHP, Postman, SoapUI, Docker.\n\n-Frameworks: .NET, Angular, Laravel, Django, Ruby on Rails.\n\n-Bases de Datos: PostgreSQL, Oracle, MySQL, MariaDB, Firebase, Neo4j.\n\n-Control de versiones: Git/GitHub, Azure DevOps, Team Foundation Server (TFS)\n\n-Conocimientos en Ciberseguridad: Kali Linux y herramientas, Técnicas OSINT, Auditorías, Red Team, Hacking Ético…\n\n-Conocimientos para la administración de sistemas Linux, en tecnologías de autenticación (RADIUS, LDAP, CAS) y en la nube (AWS, Azure)."
+    },
+
+    {
+    "idSeccion": 4,
+    "tituloSeccion": "Aptitudes",
+    "textoSeccion": "-Responsable y con conocimientos en metodologías ágiles (SCRUM).\n\n-Trabajo en equipo."
+    },
+
+    {
+    "idSeccion": 5,
+    "tituloSeccion": "Idiomas",
+    "textoSeccion": "-Inglés Nivel B1."
+    },
+
+    {
+    "idSeccion": 6,
+    "tituloSeccion": "Datos de Interés",
+    "textoSeccion": "-Permiso de Conducir B con disponibilidad de vehículo."
+    }
+]
+

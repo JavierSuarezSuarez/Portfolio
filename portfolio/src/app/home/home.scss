@@ -1,0 +1,89 @@
+.contenidoHome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(15, auto);
+}
+
+.divFotoTitulo {
+    text-align: center;
+}
+
+.divFoto {
+    width: 260px;
+    height: 329px;
+    margin: 0 auto;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.divExpansionPanelsIzq{
+    margin-right: 20px;
+}
+
+.spanLogos {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.divLogos {
+    width: 55px;
+    height: 55px;
+}
+
+.logos {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.divTitulo{
+    margin-top: 20px;
+}
+
+.divDatosContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.enlacesDatosContacto {
+    text-decoration: none;
+    color: black;
+}
+
+
+.textoTituloHome {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2758c1;
+}
+
+.divNombre {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.textoNombre {
+    font-size: 3em;
+    font-weight: bold;
+    color: #2758c1;
+}
+
+.spacer {
+  display: inline-block;
+}
