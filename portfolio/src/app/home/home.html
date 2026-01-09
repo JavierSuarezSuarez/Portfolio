@@ -1,9 +1,10 @@
 
-<div class="contenidoHome">
+<div id="contenido-pdf" class="contenidoHome">
 
     <!--Seccion izquierda con foto, datos de contacto y datos adicionales-->
     <section class="sectionIzq">
 
+        <!--Foto y titulo-->
         <div class="divFotoTitulo">
             <div class="divFoto">
                 <img [src]="rutaFoto" alt="Foto Perfil" class="foto" />
@@ -13,7 +14,8 @@
                 <span class="textoTituloHome">INGENIERO INFORMÁTICO</span>
             </div>
         </div>
-        
+
+        <!--Datos de contacto-->
         <div class="divDatosContacto">
             <span class="spanLogos">
                 <div class="divLogos"><img [src]="rutaLogoUbicacion" alt="Logo Ubicacion" class="logos" /></div> 
@@ -36,8 +38,9 @@
             </span>
         </div>
 
+        <!--Datos adicionales-->
         <div class="divExpansionPanelsIzq">
-            <mat-accordion multi class="expansionPanelAccordion">
+            <mat-accordion multi #accordIzq="matAccordion" class="expansionPanelAccordion">
                 <!--Expansion Panel de Aptitudes-->
                 <app-expansionpanel [idSeccion]="SeccionesCV.Aptitudes"></app-expansionpanel>
                 <span class="spacer"></span>
@@ -53,11 +56,13 @@
 
     <!--Seccion derecha con el nombre y apartados en Expansion Panels-->
     <section class="sectionDer">
+        <!--Nombre-->
         <div class="divNombre">
             <span class="textoNombre">Javier Suárez Suárez</span>
         </div>
+        <!--Expansion Panels con las diferentes secciones del CV-->
         <div class="divExpansionPanelsDer">
-            <mat-accordion multi class="expansionPanelAccordion">
+            <mat-accordion multi #accordDer="matAccordion" class="expansionPanelAccordion">
                 <!--Expansion Panel de Perfil Profesional-->
                 <app-expansionpanel [idSeccion]="SeccionesCV.PerfilProfesional"></app-expansionpanel>
                 <span class="spacer"></span>

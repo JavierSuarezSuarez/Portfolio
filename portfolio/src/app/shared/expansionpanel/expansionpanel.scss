@@ -1,16 +1,26 @@
+
 .tituloSeccion {
   font-weight: bold;
   font-size: 1.2em;
   color: #3671ed;
-  text-decoration: underline;
 }
 
-.tituloTextoSeccion {
+.textoSeccion {
+  white-space: pre-line;
+}
+
+.divTextoSeccionComplejo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tituloSubSeccion {
   font-weight: bold;
   font-size: 1em;
 }
 
-
-.textoSeccion {
+.textoSubSeccion {
   white-space: pre-line;
 }

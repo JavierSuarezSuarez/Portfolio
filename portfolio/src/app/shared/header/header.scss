@@ -25,6 +25,13 @@
     object-fit: cover;
 }
 
+.divBotones {
+    display: flex;
+    gap: 10px;
+}
+
 .btnCabecera {
-    color: white;
+    border: 1px solid white;
+    color: white !important;
+    margin-top: 5px;
 }

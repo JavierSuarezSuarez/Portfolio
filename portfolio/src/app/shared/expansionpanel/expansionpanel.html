@@ -4,13 +4,24 @@
     <!--Header ExpansionPanel-->
     <mat-expansion-panel-header>
         <mat-panel-title>        
-            <span class="tituloSeccion">{{ titulo }}</span>
+            <span class="tituloSeccion">{{ tituloSeccion }}</span>
         </mat-panel-title>
     </mat-expansion-panel-header>
 
     <!-- Contenido ExpansionPanel-->
     <div class="contenidoExpansionPanel">
-        <span class="textoSeccion">{{ texto }}</span>
+        <!--Si es texto simple, se inserta tal cual-->
+        @if(textoSeccionSimple !== null) {
+            <span class="textoSeccion">{{ textoSeccionSimple }}</span>
+        }@else if (textoSeccionComplejo !== null) {
+            <!--Si es texto complejo, se itera por cada objeto de textoSeccionComplejo extrayendo e insertando titulo y texto de subsecciones-->
+            @for (objetoTextoSeccionComplejo of textoSeccionComplejo; track objetoTextoSeccionComplejo; let i = $index) {
+                <div class="divTextoSeccionComplejo">
+                    <span class="tituloSubSeccion">{{ objetoTextoSeccionComplejo.tituloSubSeccion }}</span>
+                    <span class="textoSubSeccion"> {{ objetoTextoSeccionComplejo.textoSubSeccion.join('\n\n') }}</span>
+                </div>
+            }     
+        }    
     </div>
 </mat-expansion-panel>
 
