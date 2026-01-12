@@ -110,6 +110,12 @@
 
   .divDatosContacto {
     order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .divExpansionPanelsDer {
@@ -145,15 +151,10 @@
     color: #2758c1;
   }
 
-  .divDatosContacto {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  .divLogos {
+    width: 55px;
+    height: 55px;
   }
-
   .spanLogos {
     display: flex;
     align-items: center;
