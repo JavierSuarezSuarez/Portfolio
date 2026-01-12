@@ -2,15 +2,34 @@
 <div class="divHeader">
     <!--Bloque izquierdo con logo y texto cabecera-->
     <div class="divLogoTextoCabecera">
-        <div class="divLogoCabecera"><img [src]="rutaLogoDev" alt="Logo Cabecera" class="logoCabecera" /></div>
+        <div class="divLogoCabecera">
+            <img [src]="rutaLogoDev" alt="Logo Cabecera" class="logoCabecera" />
+        </div>
         <h1 class="textoHeader">Portfolio Personal</h1>
     </div>
 
-    <!--Bloque derecho con botones de control de la cabecera-->
-    <div class="divBotones">
+    <!--Bloque derecho con botones de control de la cabecera en version PC-->
+    <div class="divBotones desktop-only">
         <button mat-button class="btnCabecera" (click)="contraerTodo()"> <mat-icon class="logoBtn" svgIcon="collapseAll"></mat-icon> Contraer Todo</button>
         <button mat-button class="btnCabecera" (click)="expandirTodo()"> <mat-icon class="logoBtn" svgIcon="expandAll"></mat-icon> Expandir Todo</button>
         <button mat-button class="btnCabecera" (click)="descargarComoPDF()"> <mat-icon class="logoBtn" svgIcon="download"></mat-icon> Descargar como PDF</button>
     </div>
+
+    <!-- Menu hamburguesa movil -->
+    <button mat-icon-button class="mobile-only" [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu" class="menuMovil">
+        <button mat-menu-item (click)="contraerTodo()" class="menuMovilItem">
+            <span>Contraer todo</span>
+        </button>
+        <button mat-menu-item (click)="expandirTodo()">
+            <span>Expandir todo</span>
+        </button>
+        <button mat-menu-item (click)="descargarComoPDF()">
+            <span>Descargar PDF</span>
+        </button>
+    </mat-menu>
 </div>
 

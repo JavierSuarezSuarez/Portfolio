@@ -1,22 +1,26 @@
+@use '@angular/material' as mat;
+
 .divHeader {
     background-color: #3f51b5;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-}
-
-.textoHeader {
-    color: white;
-    font-size: 2em;
+    width: 100%;
 }
 
 .divLogoTextoCabecera {
     display: flex;
+    align-items: center;
 }
 
 .divLogoCabecera {
     width: 55px;
     height: 55px;
+}
+
+.textoHeader {
+    color: white;
+    font-size: 2em;
 }
 
 .logoCabecera {
@@ -28,10 +32,39 @@
 .divBotones {
     display: flex;
     gap: 10px;
+    margin-right: 15px;
 }
 
 .btnCabecera {
     border: 1px solid white;
     color: white !important;
     margin-top: 5px;
+}
+
+// Muestra elementos solo en escritorio
+.desktop-only {
+  display: flex;
+}
+// Oculta elementos solo en móvil
+.mobile-only {
+  display: none;
+}
+
+// MOVIL
+@media (max-width: 768px) {
+  // Oculta elementos solo en escritorio
+  .desktop-only {
+    display: none;
+  }
+
+  // Muestra elementos solo en móvil
+  .mobile-only {
+    display: inline-flex;
+    color: white;
+    margin-top: 5px;
+  }
+
+  .textoHeader {
+    font-size: 1.2rem;
+  }
 }

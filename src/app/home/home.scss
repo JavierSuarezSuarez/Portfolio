@@ -80,8 +80,44 @@
     font-size: 3em;
     font-weight: bold;
     color: #2758c1;
+    line-height: normal;
 }
 
 .spacer {
   display: inline-block;
+}
+
+// MOVIL
+@media (max-width: 768px) {
+  .textoNombre {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2758c1;
+    white-space: nowrap;
+  }
+
+  .divFoto {
+    width: 198px;
+    height: 252px;
+    margin: 0 auto;
+  }
+
+  .textoTituloHome {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2758c1;
+  }
+
+  .spanLogos {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .enlacesDatosContacto {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+  }
+
 }
