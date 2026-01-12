@@ -83,13 +83,50 @@
     line-height: normal;
 }
 
+.textoNombreMovil {
+   display: none;
+}
+
 .spacer {
   display: inline-block;
 }
 
 // MOVIL
 @media (max-width: 768px) {
+
+  .contenidoHome {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionIzq,
+  .sectionDer {
+    display: contents;
+  }
+
+  .divFotoTitulo {
+    order: 1;
+  }
+
+  .divDatosContacto {
+    order: 2;
+  }
+
+  .divExpansionPanelsDer {
+    order: 3;
+  }
+
+  .divExpansionPanelsIzq {
+    order: 4;
+  }
+
   .textoNombre {
+    display: none;
+  }
+
+  .textoNombreMovil {
+    display: block;
+    margin-bottom: 10px;
     font-size: 1.8em;
     font-weight: bold;
     color: #2758c1;
@@ -106,6 +143,15 @@
     font-size: 1.8em;
     font-weight: bold;
     color: #2758c1;
+  }
+
+  .divDatosContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .spanLogos {
